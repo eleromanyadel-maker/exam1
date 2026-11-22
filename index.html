@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Real Estate</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="#home">Elite<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cities">Cities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-main">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <div class="container hero-content">
+      <h1>Find Your <span>Dream Home</span> Today</h1>
+      <p>Discover luxury villas, modern apartments and cozy family houses in the best locations around the world.</p>
+      <div class="hero-buttons">
+        <a href="#properties" class="btn btn-main">View Properties</a>
+        <a href="#contact" class="btn btn-outline-light">Talk to an Agent</a>
+      </div>
+
+      <!-- search box -->
+      <div class="search-box">
+        <div class="search-item">
+          <label>Location</label>
+          <input type="text" placeholder="Where do you want to live?">
+        </div>
+        <div class="search-item">
+          <label>Type</label>
+          <select>
+            <option>Any</option>
+            <option>Villa</option>
+            <option>Apartment</option>
+            <option>House</option>
+          </select>
+        </div>
+        <div class="search-item">
+          <label>Price</label>
+          <select>
+            <option>Any price</option>
+            <option>$100k - $300k</option>
+            <option>$300k - $700k</option>
+            <option>$700k+</option>
+          </select>
+        </div>
+        <button class="btn btn-main search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 stat">
+          <h3>1.2K+</h3>
+          <p>Properties Sold</p>
+        </div>
+        <div class="col-6 col-md-3 stat">
+          <h3>850+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-6 col-md-3 stat">
+          <h3>40+</h3>
+          <p>Expert Agents</p>
+        </div>
+        <div class="col-6 col-md-3 stat">
+          <h3>15</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROPERTIES ============ -->
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub">Featured</span>
+        <h2>Featured Properties</h2>
+        <p>Hand-picked homes that match your lifestyle and budget.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="property-card">
+            <div class="img-box">
+              <img src="images/featured-properties-img-1.png" alt="Luxury Villa">
+              <span class="tag">For Sale</span>
+            </div>
+            <div class="card-body-custom">
+              <h4>Luxury Pool Villa</h4>
+              <p class="location"><i class="fa-solid fa-location-dot"></i> Miami, Florida</p>
+              <div class="features">
+                <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 4 Baths</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 420 m²</span>
+              </div>
+              <div class="price-row">
+                <h5>$1,250,000</h5>
+                <a href="#contact" class="details">Details <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="property-card">
+            <div class="img-box">
+              <img src="images/featured-properties-img-2.png" alt="City Apartment">
+              <span class="tag">For Rent</span>
+            </div>
+            <div class="card-body-custom">
+              <h4>Skyline Apartment</h4>
+              <p class="location"><i class="fa-solid fa-location-dot"></i> New York, NY</p>
+              <div class="features">
+                <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 180 m²</span>
+              </div>
+              <div class="price-row">
+                <h5>$4,800 / mo</h5>
+                <a href="#contact" class="details">Details <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="property-card">
+            <div class="img-box">
+              <img src="images/featured-properties-img-3.png" alt="Family House">
+              <span class="tag">For Sale</span>
+            </div>
+            <div class="card-body-custom">
+              <h4>Cozy Family House</h4>
+              <p class="location"><i class="fa-solid fa-location-dot"></i> Austin, Texas</p>
+              <div class="features">
+                <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                <span><i class="fa-solid fa-ruler-combined"></i> 260 m²</span>
+              </div>
+              <div class="price-row">
+                <h5>$540,000</h5>
+                <a href="#contact" class="details">Details <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub">What we do</span>
+        <h2>Our Services</h2>
+        <p>Everything you need to buy, sell or rent with confidence.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/service-img-1.webp" alt="Buy a home">
+            <div class="service-text">
+              <h4>Buy a Home</h4>
+              <p>Find the perfect place with the help of our experienced agents.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/service-img-2.webp" alt="Sell a home">
+            <div class="service-text">
+              <h4>Sell Your Property</h4>
+              <p>Get the best price with our marketing and negotiation skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/service-img-3.webp" alt="Property management">
+            <div class="service-text">
+              <h4>Property Management</h4>
+              <p>We take care of your property so you can relax.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="service-card">
+            <img src="images/service-img-4.png" alt="Rent an apartment">
+            <div class="service-text">
+              <h4>Rent an Apartment</h4>
+              <p>Modern apartments in the heart of the city with flexible plans.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="service-card">
+            <img src="images/service-img-5.png" alt="Commercial">
+            <div class="service-text">
+              <h4>Commercial Spaces</h4>
+              <p>Offices and buildings that help your business grow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITIES ============ -->
+  <section class="section" id="cities">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub">Locations</span>
+        <h2>Popular Cities</h2>
+        <p>Explore homes in the most loved destinations.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="city-card">
+            <img src="images/new-york.jpeg" alt="New York">
+            <div class="city-info"><h4>New York</h4><p>320 Properties</p></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="city-card">
+            <img src="images/los-angeles.jpeg" alt="Los Angeles">
+            <div class="city-info"><h4>Los Angeles</h4><p>280 Properties</p></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="city-card">
+            <img src="images/miami.jpeg" alt="Miami">
+            <div class="city-info"><h4>Miami</h4><p>190 Properties</p></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="city-card">
+            <img src="images/luxury-villa.jpeg" alt="Luxury Villas">
+            <div class="city-info"><h4>Luxury Villas</h4><p>95 Properties</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US / MODERN ============ -->
+  <section class="section why">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6">
+          <img src="images/modern-apartment.jpeg" alt="Modern home" class="why-img">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="sub">Why Elite</span>
+          <h2>We Make Finding a Home Easy</h2>
+          <p class="why-text">Our team guides you through every step, from the first visit to the final signature.</p>
+          <ul class="why-list">
+            <li><i class="fa-solid fa-circle-check"></i> Verified and trusted listings</li>
+            <li><i class="fa-solid fa-circle-check"></i> Professional and friendly agents</li>
+            <li><i class="fa-solid fa-circle-check"></i> Fast and transparent process</li>
+          </ul>
+          <a href="#contact" class="btn btn-main">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <span class="sub">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real stories from people who found their home with us.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"The whole process was smooth. They found us the perfect apartment in just two weeks."</p>
+            <div class="reviewer"><img src="images/avatar-1.jpg" alt=""><div><h6>Daniel Okafor</h6><span>Apartment Buyer</span></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Very professional team. They sold my villa above the asking price."</p>
+            <div class="reviewer"><img src="images/avatar-2.jpg" alt=""><div><h6>James Carter</h6><span>Villa Seller</span></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Honest advice and great communication. I always felt in good hands."</p>
+            <div class="reviewer"><img src="images/avatar-3.jpg" alt=""><div><h6>Michael Stein</h6><span>Home Owner</span></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="review-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"As a first time buyer I had many questions and they answered all of them patiently."</p>
+            <div class="reviewer"><img src="images/avatar-4.jpg" alt=""><div><h6>Samuel Adeyemi</h6><span>First Time Buyer</span></div></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="review-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Great selection of properties and a very friendly team. Highly recommended!"</p>
+            <div class="reviewer"><img src="images/avatar-5.jpg" alt=""><div><h6>Marcus Reed</h6><span>Property Investor</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACT ============ -->
+  <section class="cta" id="contact">
+    <div class="container cta-content">
+      <h2>Ready to Find Your Perfect Home?</h2>
+      <p>Leave your email and one of our agents will contact you soon.</p>
+      <form class="cta-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="button" class="btn btn-main">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="logo" href="#home">Elite<span>.</span></a>
+          <p class="footer-text">Your trusted partner for buying, selling and renting properties.</p>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cities">Cities</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Manage</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <h5>Contact</h5>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Main Street, New York</li>
+            <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fa-solid fa-envelope"></i> info@elite.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Elite Real Estate. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
